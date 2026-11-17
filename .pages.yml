@@ -1,0 +1,51 @@
+
+media:
+  input: media
+  output: /media
+
+content:
+  - name: homepage
+    label: "9lumine - Home Editor"
+    type: file
+    path: site.json
+    format: json
+    fields:
+      - name: eyebrow
+        label: "ข้อความเล็กด้านบน"
+        type: string
+
+      - name: tagline
+        label: "ข้อความหลักหน้า HOME"
+        type: text
+
+      - name: hero_image
+        label: "แบนเนอร์จาก Canva"
+        type: image
+
+      - name: hero_image_alt
+        label: "คำอธิบายรูปแบนเนอร์"
+        type: string
+
+      - name: note_title
+        label: "หัวข้อหน้าต่าง Note"
+        type: string
+
+      - name: note_text
+        label: "ข้อความในหน้าต่าง Note"
+        type: text
+
+      - name: feature_text
+        label: "ข้อความแนะนำร้าน"
+        type: text
+
+      - name: footer_text
+        label: "ข้อความด้านล่างเว็บไซต์"
+        type: string
+
+      - name: background_color
+        label: "สีพื้นหลัง (HEX)"
+        type: string
+
+      - name: accent_color
+        label: "สีเน้น (HEX)"
+        type: string
