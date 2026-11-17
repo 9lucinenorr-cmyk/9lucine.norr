@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#dce3d4"><meta name="description" content="9lumine — little objects for complicated feelings."><title>9lumine — tiny internet store</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="desktop" id="desktop">
+  <header class="topbar"><span>✳ 9LUCINE.NORR.STUDIO <small>/ 9lumine shop</small></span><span class="clock" id="clock"></span><span class="online">● <span id="modeLabel">DEMO MODE</span></span></header>
+  <div class="hero"><p class="eyebrow" id="homeEyebrow">a tiny shop on the very big internet</p><h1>9<span class="serif">lumine</span><span class="asterisk">✳</span></h1><p class="tagline" id="homeTagline">little objects for complicated feelings.</p><img id="homeBanner" class="home-canva-banner" alt="" hidden><div class="hero-buttons"><button class="primary" data-open="shop">OPEN SHOP <span>↗</span></button><button class="ghost" data-open="about">WHAT IS THIS?</button></div></div>
+  <aside class="desktop-icons"><button data-open="shop"><span>🛍️</span>9lumine_shop.app</button><button data-open="about"><span>📄</span>read_me.txt</button><button data-open="orders"><span>📦</span>my_orders.exe</button><button data-open="info"><span>✉️</span>contact.txt</button></aside>
+  <div class="floating-window window-note draggable" id="noteWin" style="left:67%;top:22%"><div class="window-bar draghandle"><span>✦ note_001.txt</span><button aria-label="ปิด" data-close="noteWin">×</button></div><div class="window-body note"><span class="stamp" id="homeNoteTitle">HELLO, HUMAN!</span><p id="homeNoteText">please be gentle<br>with the little things.<br>(including yourself)</p><span>— 9lumine</span></div></div>
+  <div class="floating-window window-feature draggable" id="featureWin" style="left:12%;top:65%"><div class="window-bar draghandle"><span>♥ todays_thought.txt</span><button aria-label="ปิด" data-close="featureWin">×</button></div><div class="window-body"><p id="homeFeatureText">we make things you can carry<br>when your thoughts are too heavy.</p><button class="text-link" data-open="shop">browse the tiny things →</button></div></div>
+  <main class="floating-window main-window" id="mainWindow" aria-live="polite"><div class="window-bar"><span id="windowTitle">9lumine_shop.app</span><div class="win-controls"><button data-home title="กลับหน้าแรก">—</button><button data-close="mainWindow" aria-label="ปิด">×</button></div></div><div class="window-body" id="screen"></div></main>
+  <div class="floating-window cart-window" id="cartWindow"><div class="window-bar"><span>cart.exe / <span id="cartCount">0</span> items</span><button data-close="cartWindow">×</button></div><div class="window-body" id="cartScreen"></div></div>
+  <footer class="taskbar"><button data-open="shop">✳ 9lumine</button><span id="homeFooterText">it is okay to exist strangely.</span><button id="cartButton">🛒 CART <b id="cartCountFooter">0</b></button></footer>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="site-content.js"></script><script src="config.js"></script><script src="app.js"></script>
+</body></html>
